@@ -16,8 +16,8 @@ public class AddressBookEntry
     [RegularExpression(@"^\d{9}$", ErrorMessage = "Phone number must have exactly 9 digits")]
     public string PhoneNumber { get; set; }
     
-    [Required(ErrorMessage = "Address is required")]
-    public string Address { get; set; }
+    [Required(ErrorMessage = "City is required")]
+    public string City { get; set; }
     
     [Required(ErrorMessage = "Birth date is required")]
     public DateTime BirthDate { get; set; }

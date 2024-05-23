@@ -5,37 +5,22 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Address_Book.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Address_Book.Controllers
 {
     public class HomeController : Controller
     {
         private readonly IMapper _mapper;
-        private readonly List<AddressBookEntry> _addressBook = new List<AddressBookEntry>()
-        {
-            new AddressBookEntry()
-            {
-                Id = 1,
-                FirstName = "Jan",
-                EmailAddress = "jan@mail.com",
-                PhoneNumber = "478293204",
-                Address = "Domowa 4, Warszawa",
-                BirthDate = new DateTime(1999, 07, 21)
-            },
-            new AddressBookEntry()
-            {
-                Id = 2,
-                FirstName = "Adam",
-                EmailAddress = "adam@mail.com",
-                PhoneNumber = "478293204",
-                Address = "Domowa 4, Krakow",
-                BirthDate = new DateTime(1999, 07, 21)
-            }
-        };
+        private readonly AddressBookDbContext _context;
+        
+        private readonly List<AddressBookEntry> _addressBook = new List<AddressBookEntry>();
 
-        public HomeController(IMapper mapper)
+        public HomeController(IMapper mapper, AddressBookDbContext context)
         {
             _mapper = mapper;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -46,45 +31,47 @@ namespace Address_Book.Controllers
 
         public IActionResult Privacy()
         {
-            var addressBookEntriesDto = _mapper.Map<List<AddressBookEntryDto>>(_addressBook);
+            var addressBookEntries = _context.AddressBookEntries.ToList();
+            var addressBookEntriesDto = _mapper.Map<List<AddressBookEntryDto>>(addressBookEntries);
             return View(addressBookEntriesDto);
         }
 
-        // POST: /AddressBook/AddAddress
+        // POST: /Home/AddAddress
         [HttpPost]
-        public IActionResult AddAddress(AddressBookEntryDto entryDto)
+        public async Task<IActionResult> AddAddress(AddressBookEntryDto entryDto)
         {
             if (ModelState.IsValid)
             {
                 var entry = _mapper.Map<AddressBookEntry>(entryDto);
-                entry.Id = _addressBook.Count + 1;
-                _addressBook.Add(entry);
+                _context.Add(entry);
+                await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
             return View("Index", entryDto);
         }
 
 
-        // GET: /AddressBook/GetLastAddress
-        [HttpGet]
-        public IActionResult GetLastAddress()
+
+        // GET: /Home/GetLastAddress
+        [HttpGet("Home/GetLastAddress")]
+        public async Task<IActionResult> GetLastAddress()
         {
-            if (_addressBook.Count > 0)
+            var lastEntry = await _context.AddressBookEntries.LastOrDefaultAsync();
+            if (lastEntry != null)
             {
-                var lastEntry = _addressBook.Last();
                 var lastEntryDto = _mapper.Map<AddressBookEntryDto>(lastEntry);
                 return Ok(lastEntryDto);
             }
             return NotFound();
         }
 
-        // GET: /AddressBook/GetAddressesByCity/{city}
-        [HttpGet("{city}")]
-        public IActionResult GetAddressesByCity(string city)
+        // GET: /Home/GetAddressesByCity/{city}
+        [HttpGet("Home/GetAddressesByCity/{city}")]
+        public async Task<IActionResult> GetAddressesByCity(string city)
         {
-            var entriesInCity = _addressBook
-                .Where(entry => entry.Address.Contains(city, StringComparison.OrdinalIgnoreCase))
-                .ToList();
+            var entriesInCity = await _context.AddressBookEntries
+                .Where(entry => entry.City.Equals(city, StringComparison.OrdinalIgnoreCase))
+                .ToListAsync();
 
             if (entriesInCity.Count > 0)
             {
@@ -93,5 +80,6 @@ namespace Address_Book.Controllers
             }
             return NotFound();
         }
+
     }
 }
