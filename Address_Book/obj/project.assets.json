@@ -78,6 +78,22 @@
       "Microsoft.EntityFrameworkCore.Analyzers/9.0.0-preview.4.24267.1": {
         "type": "package"
       },
+      "Microsoft.EntityFrameworkCore.InMemory/9.0.0-preview.4.24267.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0-preview.4.24267.1"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/9.0.0-preview.4.24266.19": {
         "type": "package",
         "dependencies": {
@@ -377,6 +393,21 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.InMemory/9.0.0-preview.4.24267.1": {
+      "sha512": "z0OM1Rb/D442+YD4wcfmhKACzqGTjMJU2Kznbzpy/VzM9WPBf5b2kt/PBZ5X9GE3RviQ9475a9p2jnshpmWJ3Q==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/9.0.0-preview.4.24267.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.9.0.0-preview.4.24267.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
+      ]
+    },
     "Microsoft.Extensions.Caching.Abstractions/9.0.0-preview.4.24266.19": {
       "sha512": "RWhhEQY6xzEMjqYxyVaku6pyfHJU2eIdQbfiB+ZbBazk5+rQzsZdu2fYhb0Qb1MMjH7QGA/HBzfkNwaf1bgeDQ==",
       "type": "package",
@@ -671,7 +702,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
-      "Microsoft.EntityFrameworkCore >= 9.0.0-preview.4.24267.1"
+      "Microsoft.EntityFrameworkCore >= 9.0.0-preview.4.24267.1",
+      "Microsoft.EntityFrameworkCore.InMemory >= 9.0.0-preview.4.24267.1"
     ]
   },
   "packageFolders": {
@@ -716,6 +748,10 @@
             "version": "[12.0.1, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.0-preview.4.24267.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[9.0.0-preview.4.24267.1, )"
           }

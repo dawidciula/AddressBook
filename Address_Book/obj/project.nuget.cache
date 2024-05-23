@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E0L6R5o5GQTfFUqdLtXOOasCBfwr+OhJvWwekIMPdmVdT/mRnkyR22Ze/YGjCfKerU6A6d7K0ehI5So9zCHbaQ==",
+  "dgSpecHash": "wVEgmoG8DYiRAL+bBEVPSubrRGOuUjEmQvowaOQTOdgQ8nrTm8XDbPBVDG6W3tg5iAzgZa7FJ9gly0sLs8Vtzg==",
   "success": true,
   "projectFilePath": "/Users/dawidciula/RiderProjects/Address_Book/Address_Book/Address_Book.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "/Users/dawidciula/.nuget/packages/microsoft.entityframeworkcore/9.0.0-preview.4.24267.1/microsoft.entityframeworkcore.9.0.0-preview.4.24267.1.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0-preview.4.24267.1/microsoft.entityframeworkcore.abstractions.9.0.0-preview.4.24267.1.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.0-preview.4.24267.1/microsoft.entityframeworkcore.analyzers.9.0.0-preview.4.24267.1.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.entityframeworkcore.inmemory/9.0.0-preview.4.24267.1/microsoft.entityframeworkcore.inmemory.9.0.0-preview.4.24267.1.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.0-preview.4.24266.19/microsoft.extensions.caching.abstractions.9.0.0-preview.4.24266.19.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/microsoft.extensions.caching.memory/9.0.0-preview.4.24266.19/microsoft.extensions.caching.memory.9.0.0-preview.4.24266.19.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.0-preview.4.24266.19/microsoft.extensions.dependencyinjection.9.0.0-preview.4.24266.19.nupkg.sha512",

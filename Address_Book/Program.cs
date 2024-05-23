@@ -1,8 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Address_Book.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
+builder.Services.AddDbContext<AddressBookDbContext>(options =>
+    options.UseInMemoryDatabase("AddressBookEntriesDatabase"));
 
 var app = builder.Build();
 
