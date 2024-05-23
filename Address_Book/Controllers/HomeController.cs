@@ -36,7 +36,7 @@ namespace Address_Book.Controllers
             return View(addressBookEntriesDto);
         }
 
-        // POST: /AddressBook/AddAddress
+        // POST: /Home/AddAddress
         [HttpPost]
         public async Task<IActionResult> AddAddress(AddressBookEntryDto entryDto)
         {
@@ -52,8 +52,8 @@ namespace Address_Book.Controllers
 
 
 
-        // GET: /AddressBook/GetLastAddress
-        [HttpGet]
+        // GET: /Home/GetLastAddress
+        [HttpGet("Home/GetLastAddress")]
         public async Task<IActionResult> GetLastAddress()
         {
             var lastEntry = await _context.AddressBookEntries.LastOrDefaultAsync();
@@ -65,12 +65,12 @@ namespace Address_Book.Controllers
             return NotFound();
         }
 
-        // GET: /AddressBook/GetAddressesByCity/{city}
-        [HttpGet("{city}")]
+        // GET: /Home/GetAddressesByCity/{city}
+        [HttpGet("Home/GetAddressesByCity/{city}")]
         public async Task<IActionResult> GetAddressesByCity(string city)
         {
             var entriesInCity = await _context.AddressBookEntries
-                .Where(entry => entry.Address.Contains(city, StringComparison.OrdinalIgnoreCase))
+                .Where(entry => entry.City.Equals(city, StringComparison.OrdinalIgnoreCase))
                 .ToListAsync();
 
             if (entriesInCity.Count > 0)
@@ -80,5 +80,6 @@ namespace Address_Book.Controllers
             }
             return NotFound();
         }
+
     }
 }

@@ -17,7 +17,7 @@ public class AddressBookEntryDto
     public string PhoneNumber { get; set; }
 
     [Required(ErrorMessage = "Address is required")]
-    public string Address { get; set; }
+    public string City { get; set; }
 
     [Required(ErrorMessage = "Birth date is required")]
     public DateTime BirthDate { get; set; }

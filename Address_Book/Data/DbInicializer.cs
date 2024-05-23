@@ -23,7 +23,7 @@ namespace Address_Book.Data
                     FirstName = "Jan",
                     EmailAddress = "jan@mail.com",
                     PhoneNumber = "478293204",
-                    Address = "Domowa 4, Warszawa",
+                    City = "Warszawa",
                     BirthDate = new DateTime(1999, 07, 21)
                 },
                 new AddressBookEntry
@@ -32,7 +32,7 @@ namespace Address_Book.Data
                     FirstName = "Adam",
                     EmailAddress = "adam@mail.com",
                     PhoneNumber = "478293204",
-                    Address = "Domowa 4, Krakow",
+                    City = "Krakow",
                     BirthDate = new DateTime(1999, 07, 21)
                 }
             };
