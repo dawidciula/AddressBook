@@ -11,6 +11,15 @@ builder.Services.AddDbContext<AddressBookDbContext>(options =>
 
 var app = builder.Build();
 
+//Database inicialization
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<AddressBookDbContext>();
+    AddressBookDbContextInitializer.Initialize(context);
+}
+
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
