@@ -1,4 +1,4 @@
-﻿@model AddressBookEntry
+﻿@model Address_Book.ViewModels.AddressBookEntryDto
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -33,7 +33,7 @@
                     <input asp-for="BirthDate" class="form-control"/>
                     <span asp-validation-for="BirthDate" class="text-danger"></span>
                 </div>
-                <button type="submit" class="btn btn-primary">Dodaj adres</button>
+                <button type="submit" class="btn btn-primary">Add Address</button>
             </form>
         </div>
     </div>

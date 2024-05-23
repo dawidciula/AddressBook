@@ -6,4 +6,14 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Home\PartialViews\FormPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\PartialViews\DisplayPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\DisplayPartial\FormPartial.cshtml" />
+    </ItemGroup>
+
 </Project>

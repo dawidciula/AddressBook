@@ -1,6 +1,33 @@
-﻿@{
+﻿@model IEnumerable<Address_Book.ViewModels.AddressBookEntryDto>
+@{
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+
+<h2>Address Book Entries</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Email Address</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+        <th>Birth Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var entry in Model)
+    {
+        <tr>
+            <td>@entry.FirstName</td>
+            <td>@entry.EmailAddress</td>
+            <td>@entry.PhoneNumber</td>
+            <td>@entry.Address</td>
+            <td>@entry.BirthDate.ToShortDateString()</td>
+        </tr>
+    }
+    </tbody>
+</table>

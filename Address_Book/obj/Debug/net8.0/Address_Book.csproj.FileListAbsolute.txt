@@ -29,3 +29,7 @@
 /Users/dawidciula/RiderProjects/Address_Book/Address_Book/obj/Debug/net8.0/Address_Book.pdb
 /Users/dawidciula/RiderProjects/Address_Book/Address_Book/obj/Debug/net8.0/Address_Book.genruntimeconfig.cache
 /Users/dawidciula/RiderProjects/Address_Book/Address_Book/obj/Debug/net8.0/ref/Address_Book.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/obj/Debug/net8.0/Address_Book.csproj.AssemblyReference.cache
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/AutoMapper.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/obj/Debug/net8.0/Address_Book.csproj.CopyComplete
