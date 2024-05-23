@@ -1,16 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "M5RW+GKbZDzv2kE94qJyyKAwGvufk5v2Uku756I92UPlo45AvUCCpC0SvVi5PjfUu1HZx+/dHjxj6MKC0W5hww==",
+  "dgSpecHash": "E0L6R5o5GQTfFUqdLtXOOasCBfwr+OhJvWwekIMPdmVdT/mRnkyR22Ze/YGjCfKerU6A6d7K0ehI5So9zCHbaQ==",
   "success": true,
   "projectFilePath": "/Users/dawidciula/RiderProjects/Address_Book/Address_Book/Address_Book.csproj",
   "expectedPackageFiles": [
     "/Users/dawidciula/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
-    "/Users/dawidciula/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "/Users/dawidciula/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "/Users/dawidciula/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "/Users/dawidciula/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "/Users/dawidciula/.nuget/packages/microsoft.entityframeworkcore/9.0.0-preview.4.24267.1/microsoft.entityframeworkcore.9.0.0-preview.4.24267.1.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0-preview.4.24267.1/microsoft.entityframeworkcore.abstractions.9.0.0-preview.4.24267.1.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.0-preview.4.24267.1/microsoft.entityframeworkcore.analyzers.9.0.0-preview.4.24267.1.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.0-preview.4.24266.19/microsoft.extensions.caching.abstractions.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.extensions.caching.memory/9.0.0-preview.4.24266.19/microsoft.extensions.caching.memory.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.0-preview.4.24266.19/microsoft.extensions.dependencyinjection.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0-preview.4.24266.19/microsoft.extensions.dependencyinjection.abstractions.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.extensions.logging/9.0.0-preview.4.24266.19/microsoft.extensions.logging.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.0-preview.4.24266.19/microsoft.extensions.logging.abstractions.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.extensions.options/9.0.0-preview.4.24266.19/microsoft.extensions.options.9.0.0-preview.4.24266.19.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/microsoft.extensions.primitives/9.0.0-preview.4.24266.19/microsoft.extensions.primitives.9.0.0-preview.4.24266.19.nupkg.sha512"
   ],
   "logs": []
 }
