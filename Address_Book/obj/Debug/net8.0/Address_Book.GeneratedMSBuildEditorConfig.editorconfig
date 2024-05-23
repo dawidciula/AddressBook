@@ -26,12 +26,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/dawidciula/RiderProjects/Address_Book/Address_Book
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/dawidciula/RiderProjects/Address_Book/Address_Book/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[/Users/dawidciula/RiderProjects/Address_Book/Address_Book/Views/Home/ContactsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0c0xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dawidciula/RiderProjects/Address_Book/Address_Book/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/Users/dawidciula/RiderProjects/Address_Book/Address_Book/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/dawidciula/RiderProjects/Address_Book/Address_Book/Views/Shared/Error.cshtml]

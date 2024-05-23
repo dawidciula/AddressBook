@@ -29,7 +29,7 @@ namespace Address_Book.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult ContactsList()
         {
             var addressBookEntries = _context.AddressBookEntries.ToList();
             var addressBookEntriesDto = _mapper.Map<List<AddressBookEntryDto>>(addressBookEntries);
