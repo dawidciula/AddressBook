@@ -14,13 +14,15 @@ namespace Address_Book.Controllers
     {
         private readonly IMapper _mapper;
         private readonly AddressBookDbContext _context;
+        private readonly ILogger _logger;
         
         private readonly List<AddressBookEntry> _addressBook = new List<AddressBookEntry>();
 
-        public HomeController(IMapper mapper, AddressBookDbContext context)
+        public HomeController(IMapper mapper, AddressBookDbContext context, ILogger<HomeController> logger)
         {
             _mapper = mapper;
             _context = context;
+            _logger = logger;
         }
 
         public IActionResult Index()
