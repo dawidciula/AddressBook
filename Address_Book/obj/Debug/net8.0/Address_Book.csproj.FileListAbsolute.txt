@@ -116,3 +116,17 @@
 /Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Microsoft.Extensions.Logging.Configuration.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Microsoft.Extensions.Logging.Console.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Serilog.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Serilog.AspNetCore.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Serilog.Extensions.Hosting.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Serilog.Extensions.Logging.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Serilog.Formatting.Compact.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Serilog.Settings.Configuration.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Serilog.Sinks.Console.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Serilog.Sinks.Debug.dll
+/Users/dawidciula/RiderProjects/Address_Book/Address_Book/bin/Debug/net8.0/Serilog.Sinks.File.dll
