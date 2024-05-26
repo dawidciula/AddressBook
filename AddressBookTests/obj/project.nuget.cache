@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GQQutJbTUb2aBk0Ml73j3CS28aUP7hyju+KCvS/7R0+Do/nAa9Xazf2a3KnvdYB1yqw3xFbZhFtcMiw8OmWRXQ==",
+  "dgSpecHash": "nvOwHlcvZ4yWbXPtGo3qwMo+H6ha7iPPrr2OpKR2wPZyNLVAeLjO4k3o2ydyUSS3p0drjP64m7R3lwD1lRbLsw==",
   "success": true,
   "projectFilePath": "/Users/dawidciula/RiderProjects/Address_Book/AddressBookTests/AddressBookTests.csproj",
   "expectedPackageFiles": [
@@ -58,6 +58,8 @@
     "/Users/dawidciula/.nuget/packages/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/selenium.webdriver/4.21.0/selenium.webdriver.4.21.0.nupkg.sha512",
+    "/Users/dawidciula/.nuget/packages/selenium.webdriver.chromedriver/126.0.6478.1700-beta/selenium.webdriver.chromedriver.126.0.6478.1700-beta.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/serilog/3.1.1/serilog.3.1.1.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/serilog.aspnetcore/8.0.2-dev-00338/serilog.aspnetcore.8.0.2-dev-00338.nupkg.sha512",
     "/Users/dawidciula/.nuget/packages/serilog.extensions.hosting/8.0.0/serilog.extensions.hosting.8.0.0.nupkg.sha512",
