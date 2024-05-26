@@ -27,7 +27,6 @@ namespace Address_Book.Controllers
 
         public IActionResult Index()
         {
-            var addressBookEntriesDto = _mapper.Map<List<AddressBookEntryDto>>(_addressBook);
             return View();
         }
 
